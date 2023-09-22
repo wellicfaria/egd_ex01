@@ -2,7 +2,9 @@
 Exerciocio desenvolver um pipeline de dados para ingestão, transformação e análise de dados. 
 
 
-# Organização do Projeto
+## Organização do Projeto
+
+A organização de pastas é crucial para manter o projeto escalável e fácil de entender. Aqui está uma sugestão de estrutura de diretórios para o seu projeto:
 
 ```
 MeuProjeto/
@@ -22,7 +24,7 @@ MeuProjeto/
 └── README.md
 ```
 
-## Descrição:
+### Descrição:
 
 .devcontainer/: Contém todos os arquivos necessários para o DevContainer, como Dockerfile, docker-compose.yml e devcontainer.json.
 

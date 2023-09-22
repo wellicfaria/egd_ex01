@@ -3,17 +3,20 @@
 
 ## Propósito
 
-Esta pasta serve como um local de armazenamento para todos os dados brutos e processados utilizados ou gerados pelo projeto. Ela atua como um "bucket" local, similar ao que você encontraria em serviços de armazenamento como o Amazon S3 ou o HDFS (Hadoop Distributed File System).
+Esta pasta é o "armário" onde guardamos todos os tipos de dados usados no projeto. É aqui que ficam os arquivos que você vai usar para análises ou relatórios. Pense nela como uma "caixa" onde você guarda coisas importantes, similar a serviços na internet que fazem o mesmo, como o Amazon S3.
 
 ## Estrutura
 
-Essa organização chamamos de [Medallion Architecture](https://www.databricks.com/glossary/medallion-architecture)
+Nós seguimos um modelo chamado Arquitetura Medalhão para organizar nossos dados. É como se tivéssemos diferentes "gavetas" para diferentes tipos de dados.
 
 
-- `stage/`: Armazena os dados brutos, como arquivos parquet que são a entrada para os pipelines de dados.
-- `bronze/`: Contém os dados transicional que foram processados pelo PySpark.
-- `silver/`: Contém os dados as-is e tratados que foram processados e transformados pelo PySpark.
-- `gold/`: Contém os dados prontos para usso, agregados e aplicados logica de negocios que foram processados e transformados pelo PySpark.
+- `stage/`: Aqui ficam os dados iniciais, os "brutos". São como os ingredientes antes de cozinhar. Usamos principalmente arquivos no formato "parquet".
+
+- `bronze/`: Estes são dados que passaram por uma "limpeza" inicial. Imagine que você lavou as frutas antes de comê-las; é algo similar. Aqui vamos ter os dados transicionais. Ou seja, vamos conseguir olhar esse registro no tempo.  Usamos arquivos no formato "delta".
+
+- `silver/`: Aqui estão os dados que já foram mais refinados. É como se você já tivesse cortado e temperado os ingredientes para cozinhar. Aqui vamos ter os dados tratados e prontos para ser utilizados.  Usamos arquivos no formato "delta".
+
+- `gold/`: Estes são os dados "prontos para servir". Foram processados, analisados e estão prontos para serem usados em relatórios ou decisões importantes.  Usamos arquivos no formato "delta".
 
 
 

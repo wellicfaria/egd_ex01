@@ -1,0 +1,12 @@
+{
+    "name": "PySpark-Airflow-MySQL-DevContainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "forwardPorts": [8080, 3306],
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python",
+      "python.linting.enabled": true
+    },
+    "extensions": ["ms-python.python"]
+  }
+  

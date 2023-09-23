@@ -80,13 +80,13 @@ MeuProjeto/
 
 Para executar comandos SQL em um contêiner Docker que está executando o MySQL, você pode usar o seguinte procedimento:
 
-1- Acessar o Contêiner: Primeiro, você precisa acessar o shell do contêiner MySQL. Use o comando abaixo, substituindo nome_do_contêiner pelo nome real do seu contêiner MySQL. Eu recomendo criar um terminal para isso. Precione `Ctrl Shift +` para criar um terminal
+`1-Acessar o Contêiner`: Primeiro, você precisa acessar o shell do contêiner MySQL. Use o comando abaixo, substituindo nome_do_contêiner pelo nome real do seu contêiner MySQL. Eu recomendo criar um terminal para isso. Precione `Ctrl Shift +` para criar um terminal
 
 ```shell
 docker exec -it egd_ex01_devcontainer_db_ bash
 ```
 
-2- Acessar o MySQL: Uma vez dentro do shell do contêiner, você pode se conectar ao serviço MySQL usando o comando:
+`2-Acessar o MySQL`: Uma vez dentro do shell do contêiner, você pode se conectar ao serviço MySQL usando o comando:
 
 Você será solicitado a fornecer a senha do usuário root do MySQL.
 
@@ -95,13 +95,21 @@ mysql -u root -p
 ```
 A senha do banco de dados é `mysql123`. 
 
-3- Executar Comandos SQL: Após o login, você estará no shell do MySQL e poderá executar seus comandos SQL.
+`3- Executar Comandos SQL`: Após o login, você estará no shell do MySQL e poderá executar seus comandos SQL.
 
 Agora você pode criar o banco de dados e colocar os dados. 
+Em baixo voce vai encontrar o diagrama desse banco.
+
+Execute nessa ordem no banco de dados os seguintes scripts:
+Copie o script o cole no terminal que esta conectado no mysql.
+
+1º - [sql/ddls.sql](/sql/ddls.sql)
+2º - [sql/clientes.sql] (/sql/clientes.sql)
+3º - [sql/vendas.sql] (/sql/vendas.sql)
 
 ```mermaid
 ---
-title: Loja Database Diagram
+title: Criagrama do Banco de Dados
 ---
 erDiagram
     CLIENTES ||--o{ VENDAS : tem

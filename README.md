@@ -73,3 +73,6 @@ MeuProjeto/
 
 - `README.md`: Documentação do projeto, explicando como configurar e executar o projeto.
 
+## Autores do Case
+
+- `Wellington Faria` - [Linkedin](https://www.linkedin.com/in/wellicfaria/) - [GitHub](https://github.com/wellicfaria)

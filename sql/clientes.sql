@@ -1,3 +1,4 @@
+USE loja;
 INSERT INTO clientes (ID, Nome) VALUES (1, 'Cliente_1');
 INSERT INTO clientes (ID, Nome) VALUES (2, 'Cliente_2');
 INSERT INTO clientes (ID, Nome) VALUES (3, 'Cliente_3');

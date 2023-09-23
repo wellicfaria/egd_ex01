@@ -1,3 +1,4 @@
+USE loja;
 INSERT INTO vendas (Data, Produto, Quantidade, Preco, Cliente) VALUES ('2023-01-01', 'Produto_C', 9, 3.5, 18);
 INSERT INTO vendas (Data, Produto, Quantidade, Preco, Cliente) VALUES ('2023-01-02', 'Produto_B', 4, 6.0, 14);
 INSERT INTO vendas (Data, Produto, Quantidade, Preco, Cliente) VALUES ('2023-01-03', 'Produto_D', 5, 7.55, 20);

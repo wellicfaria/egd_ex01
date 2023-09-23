@@ -67,7 +67,7 @@ MeuProjeto/
 
 - `dags/`: Contém os arquivos DAG do Airflow, como dag_main.py.
 
-- `pyspark_scripts/`: Contém os scripts PySpark para transformações de dados, como transformacao_de_dados.py.
+- `pyspark_scripts/`: Contém os scripts PySpark para transformações de dados, [click aqui](/pyspark_scripts/pyspark_scripts.md) para saber o que voce tem que desenvolver.
 
 - `requirements.txt`: Lista todas as bibliotecas Python necessárias.
 

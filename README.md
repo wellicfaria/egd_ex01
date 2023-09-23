@@ -63,7 +63,7 @@ MeuProjeto/
 
 - `data/`: Armazena os dados do seu projeto. Leia mais clicando [aqui.](/data/data.md)
 
-- `sql/`: Contém scripts SQL, como vendas.sql e clientes.sql para criação de tabelas e inserção de dados. Caso queira mais dados, ou alterar algo nos dados, você pode customizar o ´generate_data_sql.py´. 
+- `sql/`: Contém scripts SQL, como vendas.sql e clientes.sql para criação de tabelas e inserção de dados. Caso queira mais dados, ou alterar algo nos dados, você pode customizar o `generate_data_sql.py`. 
 
 - `dags/`: Contém os arquivos DAG do Airflow, como dag_main.py.
 

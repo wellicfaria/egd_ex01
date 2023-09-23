@@ -103,9 +103,9 @@ Em baixo voce vai encontrar o diagrama desse banco.
 Copie o script o cole no terminal que esta conectado no mysql.
 Execute nessa ordem no banco de dados os seguintes scripts:
 
-1º - [sql/ddls.sql](/sql/ddls.sql)
-2º - [sql/clientes.sql](/sql/clientes.sql)
-3º - [sql/vendas.sql](/sql/vendas.sql)
+- 1º [sql/ddls.sql](/sql/ddls.sql)
+- 2º [sql/clientes.sql](/sql/clientes.sql)
+- 3º [sql/vendas.sql](/sql/vendas.sql)
 
 ```mermaid
 ---

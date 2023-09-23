@@ -1,4 +1,4 @@
-# Case egd_ex01 de Engenharia de Dados para o Canal e Blog DadosB
+# Case egd_ex01 de Engenharia de Dados para o Canal e Blog DadosBr
 
 
 ## Introdução

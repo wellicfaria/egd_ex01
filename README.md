@@ -104,12 +104,11 @@ Agora você pode criar o banco de dados e colocar os dados.
 title: Loja Database Diagram
 ---
 erDiagram
-    CLIENTES ||--o{ VENDAS : places
+    CLIENTES ||--o{ VENDAS : tem
     CLIENTES {
         int Id
         string Nome
     }
-    VENDAS ||--|| CLIENTES : contains
     VENDAS {
         date Data
         string Produto

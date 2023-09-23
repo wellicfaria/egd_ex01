@@ -10,7 +10,7 @@ Esta pasta é o "armário" onde guardamos todos os tipos de dados usados no proj
 Nós seguimos um modelo chamado Arquitetura Medalhão para organizar nossos dados. É como se tivéssemos diferentes "gavetas" para diferentes tipos de dados.
 
 
-- `stage/`: Aqui ficam os dados iniciais, os "brutos". São como os ingredientes antes de cozinhar. Usamos principalmente arquivos no formato "parquet".
+- `stage/`: Aqui ficam os dados iniciais, os "brutos". São como os ingredientes antes de cozinhar. Usamos principalmente arquivos no formato "parquet", particionado por data de extração.
 
 - `bronze/`: Estes são dados que passaram por uma "limpeza" inicial. Imagine que você lavou as frutas antes de comê-las; é algo similar. Aqui vamos ter os dados transicionais. Ou seja, vamos conseguir olhar esse registro no tempo.  Usamos arquivos no formato "delta".
 

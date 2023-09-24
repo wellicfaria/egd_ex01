@@ -92,6 +92,20 @@ erDiagram
         int IdCliente
     }
 ```
+### 2 . Iniciando o Airflow Localmente
+
+O Airflow já esta instalado no nosso ambinte Docker. Mas você vai precisar iniciar o mesmo. 
+
+1 - Abra um terminal(`ctrl + shift+ '`) e rode o comando: `airflow webserver -p 8055`. 
+2 - Abra outro terminal(`ctrl + shift+ '`) e rode o comando: `airflow scheduler`. 
+
+Agora no seu navegador você já consegue acessar a interface web do Airflow, pelo link:
+
+```
+http://localhost:8055/
+```
+
+Onde a usuário e senha é `admin`.
 
 ## Autores do Case
 - `Wellington Faria` - [Linkedin](https://www.linkedin.com/in/wellicfaria/) - [GitHub](https://github.com/wellicfaria)

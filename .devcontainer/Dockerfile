@@ -18,8 +18,4 @@ RUN airflow db init
 RUN airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com
 
 
-# Exponha a porta para o webserver do Airflow
-EXPOSE 8081
 
-# Comandos para iniciar o webserver e o scheduler do Airflow
-CMD ["sh", "-c", "airflow webserver -p 8081 & airflow scheduler"]

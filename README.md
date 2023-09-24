@@ -107,5 +107,8 @@ http://localhost:8055/
 
 Onde a usuário e senha é `admin`.
 
+Pronto, agora você tem seu Arflow funcionando. Voce pode desenvolver agora sua DAG. [Click aqui](/dags/dags.md) para saber mais sobre processo de desenvolvimento da sua DAG. 
+
+
 ## Autores do Case
 - `Wellington Faria` - [Linkedin](https://www.linkedin.com/in/wellicfaria/) - [GitHub](https://github.com/wellicfaria)

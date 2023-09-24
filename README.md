@@ -1,4 +1,4 @@
-GitHub Copilot: # Case egd_ex01 de Engenharia de Dados para o Canal e Blog DadosBr
+# Case egd_ex01 de Engenharia de Dados para o Canal e Blog DadosBr
 
 ## Introdução
 Olá, inscritos e seguidores do [canal YouTube](https://www.youtube.com/@DADOSBRASIL) e [blog](https://www.brdados.com.br/) DadosBR! 
@@ -61,14 +61,17 @@ MeuProjeto/
 ### 1 . Conectando no banco de dados e inserindo os registros. 
 Para executar comandos SQL em um contêiner Docker que está executando o MySQL, você pode usar o seguinte procedimento:
 1. Acesse a APPWEB: Primeiro, você precisa acessar o Banco de Dados. Para facilitar o processo, foi disponibilizada uma interface gráfica para você executar os comandos SQL pelo seu navegador. Acesse o site abaixo:
+
 ```shell
 http://localhost:8080/?server=db
 ```
 2. Acesse o MySQL: Assim que abrir a aplicação web, faça o login. O usuário é `root` e a senha do banco de dados é `mysql123`. Clique em `entrar`.
 3. Execute Comandos SQL: Após o login, no canto superior esquerdo tem um link que você deve clicar, clique em `Comando SQL`. Agora você pode criar o banco de dados e colocar os dados. Em baixo você vai encontrar o diagrama desse banco. Copie o script, cole e clique em `executar`. Execute nessa ordem no banco de dados os seguintes scripts:
+
 - 1º [sql/ddls.sql](/sql/ddls.sql)
 - 2º [sql/clientes.sql](/sql/clientes.sql)
 - 3º [sql/vendas.sql](/sql/vendas.sql)
+
 Clique em `Comando SQL` e repita esse processo até todos os scripts forem executados. Agora você tem uma Base de dados chamada `loja` com 2 tabelas: `clientes` e `vendas`.
 
 ```mermaid

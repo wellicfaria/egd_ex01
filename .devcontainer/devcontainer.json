@@ -16,6 +16,9 @@
 			"version": "latest",
 			"enableNonRootDocker": "true",
 			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "11"
 		}
 	},
 	"customizations": {
@@ -27,9 +30,9 @@
 				"GitHub.copilot-chat"
 			]
 		}
-	}
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [3306, 8080, 4040]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "docker --version",

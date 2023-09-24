@@ -27,7 +27,7 @@ with open("vendas.sql", "w") as f:
         preco = float(aux.split("-")[1])
         cliente = random.randint(1, NUMERO_CLIENTES)
         
-        f.write(f"INSERT INTO vendas (Data, Produto, Quantidade, Preco, Cliente) VALUES ('{data_str}', '{produto}', {quantidade}, {preco}, {cliente});\n")
+        f.write(f"INSERT INTO vendas (Data, Produto, Quantidade, Preco, IdCliente) VALUES ('{data_str}', '{produto}', {quantidade}, {preco}, {cliente});\n")
 f.close()
 
 # Lista de nomes de clientes
